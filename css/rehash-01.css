@@ -114,10 +114,22 @@ body {
 
 .banner {
 	background: url(../img/img-rehash-logo.png) left no-repeat;
-	padding-left: 20%;
+	position: absolute;
+	padding-left: 5%;
 	padding-top: 35%;
 }
 
-p {
-	color: white;
+@font-face {
+  font-family: 'harabara';
+  src: url('harabara.eot');
+  src: url('harabara.eot') format('embedded-opentype'),
+       url('harabara.woff') format('woff'),
+       url('harabara.ttf') format('truetype'),
+       url('harabara.svg') format('svg');
+}
+.rehash-tag {
+  	font-family: 'harabara', Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	/*text-align: left;*/
+	color: white;	
 }
