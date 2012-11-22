@@ -48,18 +48,18 @@ table {
 }
 
 
+
+
 /* START USER STYLES HERE */
 
-
 body {
-	background-color: rgba(246,146,30,0.85);
-	margin: 0;	
+	background-color: rgba(187,189,191,0.85);
 }
 
 .container {
-  	margin: 0 auto;
-	max-width: 1024px;
-	max-height: 970px;
+	width: 1024px;
+	height: 1020px;
+	margin: auto;
 }
 
 .header	{
@@ -72,20 +72,18 @@ body {
 	background: -o-linear-gradient(top,  #686868 0%,#0e0e0e 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #686868 0%,#0e0e0e 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #686868 0%,#0e0e0e 100%); /* W3C */
-/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
-	-webkit-box-shadow: 4px 3px 11px rgba(50, 50, 50, 0.77);
-	-moz-box-shadow:    4px 3px 11px rgba(50, 50, 50, 0.77);
-	box-shadow:         4px 3px 11px rgba(50, 50, 50, 0.77);
+	-webkit-box-shadow: 4px 3px 11px rgba(255, 255, 255, 0.25);
+	-moz-box-shadow:    4px 3px 11px rgba(255, 255, 255, 0.25);
+	box-shadow:         4px 3px 11px rgba(255, 255, 255, 0.25);
 
 }
 
 .logobug {
-	background: url(../img/img-rehash-bug.png) left center no-repeat;
+	background: url(../img/img-rehash-bug.png) center no-repeat;
 	width: 30px;
 	height: 35px;
-/*	width: 100%;
-	height: 100%;	*/
-	z-index: 2;
+	padding-left: 50px;
+	padding-top: 13px;
 }
 
 #language {
@@ -94,20 +92,17 @@ body {
 	float: right;
 
 }
-/*.content-wrapper {
-	background: url(img/img-background.jpg) left center no-repeat;
-	width: 1024px;
-	height: 970px;
-}*/
 
 .content-wrapper {
 	background: url(../img/img-bkgd.jpg) left center no-repeat;
-	*zoom: 1;
+	width: 1024px;
+	height: 970px;
+	/**zoom: 1;*/
 	margin: auto;
 	background-color: rgba(212,208,199,1);	
 }
 
-.content-wrapper:before, 
+/*.content-wrapper:before, 
 .content-wrapper:after {
 	content:"";
 	display:table;
@@ -115,93 +110,14 @@ body {
 
 .content-wrapper:after {
 	clear:both;
-}
+}*/
 
 .banner {
-	background: url(../img/img-rehash-logo.png) left center no-repeat;
-	/*background-position: -174px -338px;*/
-	float: none;
-	width: auto;
+	background: url(../img/img-rehash-logo.png) left no-repeat;
+	padding-left: 20%;
+	padding-top: 35%;
 }
 
-/*.block1 {
-	margin: 0 auto;
-	max-width: 100%;
-	position: relative;
-	overflow: hidden;
+p {
+	color: white;
 }
-
-.col1 {
-	background: none;	
-	width: 100%;
-	height: 400px;
-	float: left;
-}
-
-.col2  {
-	background: none;
-	width: 100%;
-	height: 100px;
-	margin-top: 10px;
-	float: left;
-}*/
-
-
-/*@media all and (min-width: 1001px) {
-	.col2 {
-		background: rgba(251, 185, 0, 1); 
-		float: none;
-		width: auto;
-	}
-
-	.col1 {
-		background: url(sunny_day_1440.png) left center no-repeat;
-		background-position: -174px -338px;
-		float: none;
-		width: auto;
-	}
-}
-
-@media all and (max-width: 1000px) and (min-width: 700px) {
-
-	.col2 {
-		background: rgba(148, 212, 214, 1); 
-		float: none;
-		width: auto;
-
-	}
-
-	.col1 {
-		background: url(snowflakes.jpg) left center no-repeat;
-		float: none;
-		width: auto;
-	}
-}
-
-@media all and (max-width: 699px) and (min-width: 450px), (min-width: 1151px) {
-	.col2 {
-		background: rgba(182, 105, 49, 1); 
-		float: none;
-		width: auto;
-	}
-
-	.col1 {
-		background: url(leaves-background.jpg) left center no-repeat;
-		float: none;
-		width: auto;
-	}
-}
-
-@media all and (max-width: 449px) and (min-width: 0px), (min-width: 1151px) {
-	.col2 {
-		background: rgba(86, 155, 209, 1); 
-		float: none;
-		width: auto;
-	}
-
-	.col1 {
-		background: url(Clue_Simple_Clouds.svg) left center no-repeat;
-		float: none;
-		width: auto;
-	}
-}*/
