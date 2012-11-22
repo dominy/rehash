@@ -52,6 +52,8 @@ table {
 
 
 .header	{
+	width: 100%;
+	height: 50px;
 	background: #686868; /* Old browsers */
 	background: -moz-linear-gradient(top,  #686868 0%, #0e0e0e 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#686868), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
@@ -60,12 +62,31 @@ table {
 	background: -ms-linear-gradient(top,  #686868 0%,#0e0e0e 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #686868 0%,#0e0e0e 100%); /* W3C */
 /*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
-*/
 }
 
+.logobug {
+	background: url(img-rehash-bug.png) left center no-repeat;
+/*	width: 50px;
+	height: 50px;*/
+	width: 100%;
+	height: 100%;	
+	z-index: 2;
+}
 
+.content-wrapper {
+	background: url(img/img-background.jpg) left center no-repeat;
+	width: 100%;
+	height: 100%;
+}
 
-.block1 {
+.banner {
+	background: url(img/img-rehash-logo.png) left center no-repeat;
+	/*background-position: -174px -338px;*/
+	float: none;
+	width: auto;
+}
+
+/*.block1 {
 	margin: 0 auto;
 	max-width: 100%;
 	position: relative;
@@ -85,7 +106,7 @@ table {
 	height: 100px;
 	margin-top: 10px;
 	float: left;
-}
+}*/
 
 
 /*@media all and (min-width: 1001px) {
