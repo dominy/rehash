@@ -87,8 +87,11 @@ body {
 }
 
 #language {
+	color: rgba(246,146,30,1);
+	/*color: #fff;*/
+	background-color: #999;
 	font-family: helvetica, arial, sans-serif;
-	font-size: 18px;
+	font-size: 14px;
 	float: right;
 
 }
