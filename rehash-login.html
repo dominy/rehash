@@ -4,137 +4,54 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Rehash Login</title>
-  <!-- <link rel="stylesheet" href="css/harabara.css" type="text/css"> -->
+  <link rel="stylesheet" href="css/harabara.css" type="text/css">
 	<link rel="stylesheet" href="css/rehash-01.css" />
-<!-- jQuery attempt start-->
-<style type="text/css">
-    /* Two custom themes */
-    .dk_theme_orange {
-      background: #ffffff; /* Old browsers */
-      background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera11.10+ */
-      background: -ms-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* IE10+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
-      background: linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
-    }
-      .dk_theme_orange .dk_options a:hover,
-      .dk_theme_orange .dk_option_current a {
-        background-color: #E15A01;
-        border-bottom-color: #604A42;
-        color: #fff;
-        text-shadow: #604A42 0 1px 0;
-      }
-      .dk_theme_orange .dk_toggle,
-      .dk_theme_orange.dk_open .dk_toggle {
-        background-color: transparent;
-      }
-      .dk_theme_orange.dk_focus .dk_toggle{
-        box-shadow: 0 0 5px #E15A01;
-        -moz-box-shadow: 0 0 5px #E15A01;
-        -webkit-box-shadow: 0 0 5px #E15A01;
-      }
-
-    .dk_theme_black {
-      background: #aebcbf; /* Old browsers */
-      background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aebcbf), color-stop(50%,#6e7774), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809)); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* Opera11.10+ */
-      background: -ms-linear-gradient(top, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* IE10+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
-      background: linear-gradient(top, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%); /* W3C */
-    }
-      .dk_theme_black .dk_toggle,
-      .dk_theme_black.dk_open .dk_toggle {
-        background-color: transparent;
-        background-image: url('images/dk_arrows_white.png');
-        color: #fff;
-        text-shadow: none;
-      }
-      .dk_theme_black .dk_options a {
-        background-color: #333;
-        color: #fff;
-        text-shadow: none;
-      }
-        .dk_theme_black .dk_options a:hover,
-        .dk_theme_black .dk_option_current a {
-          background-color: #E15A01;
-          color: #fff;
-          text-shadow: #604A42 0 1px 0;
-        }
-  </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/jquery.dropkick.1-0.1.js" type="text/javascript" charset="utf-8"></script>
-
-  <script type="text/javascript" charset="utf-8">
-    $(function () {
-      $('.dk').dropkick();
-
-      $('.black').dropkick({
-        theme : 'black'
-      });
-
-      $('.change').dropkick({
-        change: function (value, label) {
-          alert('You picked: ' + label + ':' + value);
-        }
-      });
-
-      $('.custom_theme').dropkick({
-        theme: 'black',
-        change: function (value, label) {
-          $(this).dropkick('theme', value);
-        }
-      });
-
-      $('form').live('submit', function (e) {
-        var results = $(this).find('.results');
-        console.log(results);
-        results.html($(this).serialize());
-        return false;
-      });
-
-      $('.dk_container').first().focus();
-    });
-  </script>
-
-<!-- jQuery attempt end -->
-
 </head>
 
 <body id="login">
-  <container class="container">
-    <section class="content-wrapper">
+  <div id="container">
       <header class="header">
         <div class="logobug" alt="reHash for twitter"></div>
-          <select name="pretty" tabindex="1" class="pretty dk">
-            <option value="">Choose a reaction</option>
-            <option value="amazed">Amazed</option>
-            <option value="bored">Bored</option>
-            <option value="surprised">Surprised</option>
-          </select>
+        <label for="username">Username</label>
+        <select id="language" name="Language"><p>Language: </p>
+          <option value=”english”>English</option>
+          <option value=”dutch”>Dutch</option>
+          <option value=”french”>French</option>
+          <option value=”german”>German</option>
+        </select>
       </header>
+
+
+    <div class="content-wrapper">
+
+<!-- Logo and Tag Start -->
       <div class="banner">
-        <p class="rehash-tag">Tweets when you want.</p>
+        <img class="rehashlogo" src="img/img-rehash-logo.png">
+          <p class="rehash-tag">Tweets when you want.</p>
       </div>
-    </section>
-  </container>
+<!-- Logo and Tag End   -->
 
-<script type="text/javascript">
+<!-- Login Form Start -->
+      <div class="loginall">
+        <form class="formuser">
+          <input type="text" name="login_username" id="login_username" placeholder="Username">
+          <input type="password" name="login_password" id="login_password" placeholder="Password">
+          <input type="submit" name="login_submit" id="login_submit" value="Sign In">
+          <fieldset class="rememberforget">
+            <label><input type="checkbox" name="login_remember" id="login_remember">Remember me
+            </label>
+            <a href="#" title="forgot_password" class="forgot_password">Forgot password?</a>
+          </fieldset>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-24361223-1']);
-  _gaq.push(['_trackPageview']);
+        </form>
+        <div class="newtweeter">
+          <a href="https://twitter.com/signup#" target="_blank" title="twitter_signup" class="twitter_signup">New to Tweeting? Sign up for a Twitter account</a>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 
-</script>
   
+  </div>
+<!-- Login Form End -->
+    </div>
+  </div>
 </body>
 </html>
