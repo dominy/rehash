@@ -7,8 +7,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+small, strike, strong, sub, sup, tt, var, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -112,8 +111,6 @@ body {
 .content-wrapper {
 	background: url(../img/img-bkgd.jpg) left center no-repeat;
 	background-size: cover;
-/*	width: 100%;
-	height: 970px;*/
 	margin: auto;
 }
 
@@ -152,7 +149,7 @@ body {
 
 .loginall {
 	/*background: red;*/
-	font-family: Helvetica, arial, sans-serif;
+	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: lighter;
 	font-size: 17px;
 	color: #808285;
@@ -179,7 +176,7 @@ body {
 #login_username {
 	background: #dcddde;
 	border: none;
-	font-family: helvetica, arial, sans-serif;
+	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-size: 17px;
 	font-weight: lighter;
 	margin: 0;
@@ -197,7 +194,7 @@ body {
 
 #login_password {
 	background: #dcddde;
-	font-family: helvetica, arial, sans-serif;
+	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-size: 17px;
 	font-weight: lighter;
 	padding: 7px 7px 7px 3px;
